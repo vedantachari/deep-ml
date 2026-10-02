@@ -1,0 +1,7 @@
+import numpy as np
+def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
+    a = np.array(a)
+    try :
+        return a.T
+    except ValueError:
+        return -1
